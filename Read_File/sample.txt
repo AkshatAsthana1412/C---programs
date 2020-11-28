@@ -1,0 +1,3 @@
+this is a test file
+read this file and print each line
+on the console
