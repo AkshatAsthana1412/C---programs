@@ -2,6 +2,7 @@
 //fstream header contains ifstream class, ofstream class and fstream class
 #include <fstream>
 #include <vector>
+#include "read_file.h"
 using namespace std;
 
 vector <string> getLines(string file_path){
@@ -18,13 +19,4 @@ vector <string> getLines(string file_path){
     }
     fin.close();
     return lines;
-}
-
-int main(){
-    string file_path;
-    cout << "Input the file path:\n";
-    cin >> file_path;
-    for (string line: getLines(file_path))
-        cout << line << endl;
-    return 0;
 }
