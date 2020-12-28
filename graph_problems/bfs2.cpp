@@ -67,7 +67,7 @@ int main() {
 		print_path(t, p);
 		cout << '\n';
 	}
-	used.assign(used.size(), 0);
+	used.assign(used.size(), 0); //set used to default
 
 	//BFS from s2
 	bfs(s2);
@@ -78,10 +78,6 @@ int main() {
 		print_path(t, p);
 		cout << '\n';
 	}
-	p.clear();
-	used.clear();
-	d.clear();
-
 	
 	return 0;
 }
