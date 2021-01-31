@@ -19,5 +19,5 @@ int main(){
     cin >> a >> b;
     int x = 0, y = 0;
     cout << "The gcd of the numbers is: " << extended_euclids(a,b,x,y) << endl;
-    cout << "x = " << x << "y = " << y << endl;
+    cout << "x = " << x << ", y = " << y << endl;
 }
