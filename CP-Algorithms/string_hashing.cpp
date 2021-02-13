@@ -15,6 +15,6 @@ long long compute_hash(std::string s){
 int main(){
     std::string s;
     std::cout << "Enter a string: \n";
-    std::cin >> s;
+    std::getline(std::cin, s);
     std::cout << "Hash of " << s << " is: " << compute_hash(s);
 }
