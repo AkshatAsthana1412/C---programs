@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <string>
 using namespace std;
 
 int compute_hash(string const& s){
@@ -16,12 +17,12 @@ int compute_hash(string const& s){
 int main() {
 	// your code goes here
 	int q; cin >> q;
-    
 	map <int, int> m;
+	cin.ignore(1); //for the trailing newline after 'q' which would cause problems with getline
 	while (q--){
 		string s;
 		// cin >> s;
-        getline(cin, s);
+        getline(cin, s, '\n');
 		int hash = compute_hash(s);
 		if (m.find(hash) != m.end()){
 			m[hash] += 1;
