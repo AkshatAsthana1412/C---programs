@@ -22,7 +22,7 @@ int main() {
 	while (q--){
 		string s;
 		// cin >> s;
-        getline(cin, s, '\n');
+        	getline(cin, s, '\n');
 		int hash = compute_hash(s);
 		if (m.find(hash) != m.end()){
 			m[hash] += 1;
